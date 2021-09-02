@@ -1,43 +1,6 @@
-$('.slides').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
+$(".autoplay").each(function() {
+  $(this).slick($(this).data());
 });
-
-$('.brand__wrap > .list__item').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-        }
-      }
-    
-    ]
-  });
-
 
 function header() {
     var header = document.querySelector(".header__bottom");
@@ -54,11 +17,12 @@ function header() {
 header()
 
 
-var check = "theFirst";
-let navbar = document.querySelector(".nav-bar");
-let menu = document.querySelector(".menu")
-console.log(navbar)
-navbar.addEventListener("click", function(){
+function nav() {
+  var check = "theFirst";
+  let navbar = document.querySelector(".nav-bar");
+  let menu = document.querySelector(".menu")
+  console.log(navbar)
+  navbar.addEventListener("click", function(){
     if (check == "theFirst"){
         check = "theSecond";
         navbar.classList.add( "active");
@@ -68,6 +32,9 @@ navbar.addEventListener("click", function(){
         navbar.classList.remove( "active");
         menu.classList.remove("active")
     }
-})
+  })
+}
+
+nav()
 
 

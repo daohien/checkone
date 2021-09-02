@@ -31,8 +31,8 @@
                     <a href="hello@domain.com" class="email">hello@domain.com</a>
                 </div>
                 <div class="sale">
-                    Free shipping on all orders over <span class="price"> $79 </span> <span class="btn "> Shop
-                        Now!</span>
+                    Free shipping on all orders over <span class="price"> $79 </span> <a href="#" class="btn "> Shop
+                        Now!</a>
                 </div>
                 <div class="social">
                     <ul class="list__item">
@@ -80,7 +80,9 @@
             <div class="header__bottom">
                 <div class="bottom__wrap">
                     <div class="logo">
-                        <img src="assets/imgs/logo/logo__header.png" alt="IMG">
+                        <a href="#" class="simple__link">
+                            <img src="assets/imgs/logo/logo__header.png" alt="IMG">
+                        </a>
                     </div>
                     <div class="menu ">
                         <ul class="list__item">
@@ -171,7 +173,12 @@
     <!-- main content -->
     <div class="main__content">
         <div class="slider">
-            <div class="slides">
+            <div class="slides autoplay"
+            data-dots='true'
+            data-infinite="true"
+            data-speed="700"
+            data-autoplay="true"
+            data-cssEase="linear">
                 <div class="slide">
                     <div class="thumb">
                         <img src="assets/imgs/slider/bg.png" alt="IMG">
@@ -926,7 +933,14 @@
         <!-- brand -->
         <section class="brand">
             <div class="brand__wrap">
-                <div class="list__item general__flex">
+                <div class="list__item autoplay"
+                    data-slides-To-Show = '6'
+                    data-slides-To-Scroll = '1'
+                    data-infinite="true"
+                    data-speed="300"
+                    data-autoplay="true"
+                    data-dots = 'false'
+                    data-responsive= '[{"breakpoint": 1200, "settings": {"slidesToShow": 6}}, {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 768, "settings": {"slidesToShow": 2}}]'>
                     <div class="thumb">
                         <img src="assets/imgs/logo/01.png" alt="IMG">
                     </div>
