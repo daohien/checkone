@@ -180,6 +180,7 @@ footer .footer__wrapper .footer__bottom {
 .best__seller .list__item .item .thumb img,
 .trending__products .list__item .item .thumb img {
     display: block;
+    width: 100%;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
@@ -212,6 +213,10 @@ footer .footer__wrapper .footer__bottom {
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
+}
+
+.follow .follow__wrap img {
+    width: 100%;
 }
 
 /* ===== header ===== */
@@ -277,6 +282,13 @@ header .header__wrap .header__bottom.active {
     padding: 0 10px;
 }
 
+.header__wrap .header__top #general__style {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #666666;
+}
+
 .header__wrap .header__bottom .bottom__wrap {
     padding: 0 2.5%;
     display: -webkit-box;
@@ -295,6 +307,49 @@ header .header__wrap .header__bottom.active {
     width: 58.33%;
     text-align: right;
     margin-right: 70px;
+}
+
+
+.header__wrap .header__bottom .bottom__wrap .menu .item {
+    position: relative;
+}
+
+.header__wrap .header__bottom .bottom__wrap .menu .item .sub__menu {
+    position: fixed;
+    z-index: 1000;
+    top: 120px;
+    padding: 20px;
+    background-color: #fff;
+    margin-left: -20px;
+    width: 300px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; 
+}
+
+.header__wrap .header__bottom .bottom__wrap .menu .item:hover .sub__menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; 
+}
+
+.header__wrap .header__bottom .bottom__wrap .menu .item .sub__menu .item {
+    padding: 0;
+    text-align: left;
+}
+
+header .header__wrap .header__bottom.active .bottom__wrap .menu .item .sub__menu {
+    top: 90px;
 }
 
 .header__wrap .header__bottom .simple__link,
@@ -354,6 +409,7 @@ header .header__wrap .header__bottom.active {
 
 .header__bottom .bottom__wrap .menu .list__item  .item {
     padding: 0 20px; 
+    /* margin: 0 20px; */
 }
 
 .header__bottom .bottom__wrap .flex__layout .list__item {
@@ -580,7 +636,7 @@ header .header__wrap .header__bottom.active {
 
 .sale .list__item .item {
     width: 50%;
-    padding: 15px;
+    padding: 0 15px ;
     position: relative;
 }
 
@@ -1132,6 +1188,10 @@ footer .footer__wrapper .line {
         margin-top: 35px;
     }
 
+    .trending__products .list__item img,
+    .best__seller .seller__wrap .list__item img {
+        width: 100%;
+    }
     /* ===== Header ===== */
 
     .header__wrap .header__top {
@@ -1478,7 +1538,6 @@ footer .footer__wrapper .line {
 
     .slider .slide .content__wrap {
         width: 65%;
-        padding: 80px 0;
     }
 
     .slider .slide .content__wrap h1 {
@@ -1497,7 +1556,6 @@ footer .footer__wrapper .line {
     
     .slider .slide .content__wrap .btn {
         background: #1a1a1a;
-        padding: 20px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
@@ -1522,6 +1580,10 @@ footer .footer__wrapper .line {
 
     .shop__category .list__item .item:first-child {
         margin-top: 0;
+    }
+
+    .shop__category .list__item .item img {
+        width: 100%;
     }
 
     /* .trending__products */
@@ -1597,7 +1659,7 @@ footer .footer__wrapper .line {
     .new__letter .letter__wrap .btn {
         width: 20%;
         text-align: center;
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     /*===== Payment =====  */
@@ -1671,9 +1733,16 @@ footer .footer__wrapper .line {
         justify-content: center;
     }
 
-    .footer__bottom .bottom__wrap .item {
-        width: 40%;
+    .footer__bottom .bottom__wrap {
         padding: 0 15px;
+    }
+
+    .footer__bottom .bottom__wrap .item:last-child {
+        width: 60%;
+    }
+
+    .footer__bottom .bottom__wrap .item:first-child {
+        width: 40%;
     }
 
     .footer__bottom .bottom__wrap .item .logo {
