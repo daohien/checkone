@@ -24,11 +24,14 @@
         <div class="header__wrap">
             <div class="header__top">
                 <div class="info">
-                    <i class="icon-phone-incoming"></i>
-                    <a href="tel:+391 (0)35 2568 4593" class="phone space">+391 (0)35 2568 4593</a>
-                    <span class="line">|</span>
-                    <i class="icon-mail-envelope-closed" class="space"></i>
-                    <a href="hello@domain.com" class="email">hello@domain.com</a>
+                    <div class="phone contact__wrap">
+                        <i class="icon-phone-incoming"></i>
+                        <a title="+391 035 2568 4593" href="tel:+39103525684593">+391 035 2568 4593</a>  
+                    </div>
+                    <div class="email contact__wrap">
+                        <i class="icon-mail-envelope-closed"></i>
+                        <a href="hello@domain.com">hello@domain.com</a>
+                    </div>
                 </div>
                 <div class="sale">
                     Free shipping on all orders over <span class="price"> $79 </span> <a href="#" class="btn "> Shop
@@ -37,20 +40,15 @@
                 <div class="social">
                     <ul class="list__item">
                         <li class="item">
-                            <select class="language " id="general__style">
-                                <option>English
-                                    <i class="icon-chevron-down"></i>
-                                </option>
+                            <select class="language general__style">
+                                <option>English</option>
                                 <option>VN</option>
                                 <option>Frend</option>
                             </select>
                         </li>
                         <li class="item">
-                            <select class="type" id="general__style">
-                                <option>
-                                    Usd
-                                    <i class="icon-chevron-down"></i>
-                                </option>
+                            <select class="type general__style">
+                                <option>Usd</option>
                                 <option>VND</option>
                             </select>
                         </li>
@@ -103,8 +101,7 @@
                                 </ul>
                             </li>
                             <li class="item">
-                                <a href="#" class="simple__link">Shop</a>
-                               
+                                <a href="#" class="simple__link">Shop</a>   
                             </li>
                             <li class="item">
                                 <a href="#" class="simple__link">
@@ -138,13 +135,15 @@
                             <li class="item nav-bar">
                                 <i class="icon-bars"></i>
                             </li>
-                            <li class="item none">
+                            <li class="item none" id="login__style">
                                 <i class="icon-person_outline"></i>
-                                <a href="" class="simple__link">
-                                    Login
-                                </a>
-                                <span>/</span>
-                                <a href="#" class="simple__link">Register</a>
+                                <div class="form">
+                                    <a href="" class="simple__link">
+                                        Login
+                                    </a>
+                                    <span>/</span>
+                                    <a href="#" class="simple__link">Register</a>
+                                </div>
                             </li>
                             <li class="item">
                                 <span class="line">|</span>
@@ -192,11 +191,9 @@
                         </h1>
                         <div class="btn container__wrap">
                             <a href="#" class="simple__link">
-                                Start Shopping
-                            </a>
-                            <span class="icon">
+                                <span>Start Shopping</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -213,11 +210,9 @@
                         </h1>
                         <div class="btn container__wrap">
                             <a href="#" class="simple__link">
-                                Start Shopping
-                            </a>
-                            <span class="icon">
+                                <span>Start Shopping</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -234,11 +229,9 @@
                         </h1>
                         <div class="btn container__wrap">
                             <a href="#" class="simple__link">
-                                Start Shopping
-                            </a>
-                            <span class="icon">
+                                <span>Start Shopping</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -271,7 +264,6 @@
                             </div>
                         </a>
                     </div>
-                    </a>
                     <div class="item item2">
                         <a href="#" class="simple__link">
                             <div class="thumb">
@@ -493,10 +485,10 @@
                                 Class aptent taciti sociosqu ad litora
                             </div>
                             <div class="btn container__wrap">
-                                <a href="#" class="simple__link">Shop Collection</a>
-                                <span class="icon">
+                                <a href="#" class="simple__link">
+                                    <span>Read More</span>
                                     <i class="icon-chevron-right"></i>
-                                </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -515,10 +507,10 @@
                                 Class aptent taciti sociosqu ad litora
                             </div>
                             <div class="btn container__wrap">
-                                <a href="#" class="simple__link">Shop Collection</a>
-                                <span class="icon">
+                                <a href="#" class="simple__link">
+                                    <span>Read More</span>
                                     <i class="icon-chevron-right"></i>
-                                </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -670,7 +662,7 @@
                     Sign up for the weekly newsletter and build better ecommerce stores.
                 </div>
                 <div class="submit general__flex">
-                    <form action="">
+                    <form>
                         <input type="text" placeholder="Enter your email address">
                         <button class="btn container__wrap ">Subscribe</button>
                     </form>
@@ -695,10 +687,10 @@
                             On all orders over $75.00
                         </p>
                         <div class="btn container__wrap">
-                            <a href="#" class="simple__link">Learn More</a>
-                            <span class="icon">
+                            <a href="#" class="simple__link">
+                                <span>Learn More</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                     <div class="item">
@@ -712,10 +704,10 @@
                             We ensure secure payment with PEV
                         </p>
                         <div class="btn container__wrap">
-                            <a href="#" class="simple__link">Learn More</a>
-                            <span class="icon">
+                            <a href="#" class="simple__link">
+                                <span>Learn More</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                     <div class="item">
@@ -729,10 +721,10 @@
                             Return it within 20 day for an exchange
                         </p>
                         <div class="btn container__wrap">
-                            <a href="#" class="simple__link">Learn More</a>
-                            <span class="icon">
+                            <a href="#" class="simple__link">
+                                <span>Learn More</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -742,9 +734,9 @@
         <section class="blog">
             <div class="blog__wrap">
                 <div class="title__wrap">
-                    <h4 class="title">
+                    <h3 class="title">
                         Latest From Blog
-                    </h4>
+                    </h3>
                     <div class="subtitle">
                         Class aptent taciti sociosqu ad litora torquent per
                     </div>
@@ -778,10 +770,10 @@
                             luctus, dui eu sagittis sodales, nulla nibh sagittis augue...
                         </p>
                         <div class="btn container__wrap">
-                            <a href="#" class="simple__link">Read More</a>
-                            <span class="icon">
+                            <a href="#" class="simple__link">
+                                <span>Read More</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                     <div class="item">
@@ -812,10 +804,10 @@
                             luctus, dui eu sagittis sodales, nulla nibh sagittis augue...
                         </p>
                         <div class="btn container__wrap">
-                            <a href="#" class="simple__link">Read More</a>
-                            <span class="icon">
+                            <a href="#" class="simple__link">
+                                <span>Read More</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                     <div class="item">
@@ -846,10 +838,10 @@
                             luctus, dui eu sagittis sodales, nulla nibh sagittis augue...
                         </p>
                         <div class="btn container__wrap">
-                            <a href="#" class="simple__link">Read More</a>
-                            <span class="icon">
+                            <a href="#" class="simple__link">
+                                <span>Read More</span>
                                 <i class="icon-chevron-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1105,8 +1097,8 @@
                                     <i class="icon-headphones"></i>
                                 </div>
                                 <div class="phone">
-                                    <a href="tel: +391 (0)35 2568 4593" class="phone-number">
-                                        +391 (0)35 2568 4593
+                                    <a title="tel: +391 035 2568 4593" href="tel:+39103525684593" class="phone-number">
+                                        +391 035 2568 4593
                                     </a> <br>
                                     <a href="hello@domain.com" class="simple__link">
                                         hello@domain.com
