@@ -347,8 +347,9 @@ header .header__wrap .header__bottom.active {
     padding-left: 10px;
 }
 
-.header__wrap .header__top .info  .phone i {
+.header__wrap .header__top .info .phone i {
     font-size: 16px;
+    color: #666666;
 }
 
 .header__wrap .header__top .sale .price {
@@ -410,8 +411,7 @@ header .header__wrap .header__bottom.active {
 .header__wrap .header__bottom .bottom__wrap .menu {
     display: block;
     margin: 0 auto;
-    text-align: right;
-    margin-right: 70px;
+    margin-left: 80px;
 }
 
 .header__wrap .header__bottom .bottom__wrap .menu .item {
@@ -497,7 +497,6 @@ header .header__wrap .header__bottom.active .bottom__wrap .menu .item .sub__menu
 }
 
 .header__wrap .header__bottom .bottom__wrap .flex__layout {
-    /* width: 25%; */
     text-align: right; 
 }
 
@@ -834,9 +833,6 @@ header .header__wrap .header__bottom.active .bottom__wrap .menu .item .sub__menu
     font-size: 14px;
     margin: 15px 0 35px 0;
 }
-
-/* ===== Best__seller ===== */
-
 
 /* ===== newLetter ===== */
 
@@ -1712,7 +1708,7 @@ footer .footer__wrapper .line {
         margin-top: 0;
     }
 
-    /* .trending__products */
+    /* ===== Trending__products ===== */
 
     .trending__products .list__item .item {
         width: 100%;
@@ -1757,7 +1753,7 @@ footer .footer__wrapper .line {
         margin: 10px 0 20px 0;
     }
 
-    /* best__seller */
+    /* ===== best__seller ===== */
 
     .best__seller .seller__wrap .list__item .item {
         width: 100%;
@@ -1765,7 +1761,7 @@ footer .footer__wrapper .line {
         margin-top: 35px;
     }
 
-    /* new__letter */
+    /* ===== New__letter ===== */
 
     .new__letter .letter__wrap {
         padding: 0px 15px;
